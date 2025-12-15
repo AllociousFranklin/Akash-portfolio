@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHorizon Nexus | Akash N</title>
+    <meta name="description" content="Innovative full-stack developer specializing in modern web technologies and AI solutions">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sky: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-sky-50 text-gray-800 font-sans antialiased">
+    <scroll-indicator></scroll-indicator>
+    <custom-navbar></custom-navbar>
+<theme-toggle></theme-toggle>
+<main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="hero-section flex flex-col md:flex-row items-center justify-between gap-8 mb-20">
+            <div class="md:w-1/2 animate-fadeIn">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-sky-700">Hi, I'm <span class="text-sky-500">Akash N</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-sky-600">Full-Stack Developer</h2>
+                <p class="text-lg mb-8 text-gray-600 leading-relaxed">Passionate about building practical tech solutions with clean, efficient code. Specializing in web development with growing interests in AI/ML and cybersecurity.</p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate-float">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-sky-300 shadow-xl glow">
+                    <img src="http://static.photos/technology/640x360/101" alt="Akash N" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-20 scroll-mt-20">
+            <h2 class="section-title">About Me</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-xl">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-600">Executive Summary</h3>
+                        <p class="text-gray-600 mb-6">Motivated Computer Science engineering student skilled in Python, JavaScript, and full-stack development. Passionate about building practical tech solutions and continuously learning modern tools and frameworks.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">JavaScript</span>
+                            <span class="skill-chip">React.js</span>
+                            <span class="skill-chip">Node.js</span>
+                            <span class="skill-chip">HTML/CSS</span>
+                            <span class="skill-chip">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-600">Education</h3>
+                        <div class="mb-6">
+                            <h4 class="font-medium text-lg">B.E. Computer Science and Engineering</h4>
+                            <p class="text-gray-500">Meenakshi Sundararajan Engineering College, Chennai</p>
+                            <p class="text-gray-500">CGPA: 8.3</p>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold mb-4 text-sky-600">Certifications</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="award" class="mr-2 text-sky-500"></i>
+                                <span>NPTEL — Data Science for Engineers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="award" class="mr-2 text-sky-500"></i>
+                                <span>Third Prize — CIPHER HUNT</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20 scroll-mt-20">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="http://static.photos/medical/640x360/101" alt="MediReportAI">
+                    </div>
+                    <div class="project-content">
+                        <h3>MediReportAI</h3>
+                        <p class="project-description">Prescription analysis web app with automated extraction and analysis of medical prescriptions.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="http://static.photos/sport/640x360/101" alt="OptiFit">
+                    </div>
+                    <div class="project-content">
+                        <h3>OptiFit</h3>
+                        <p class="project-description">Fitness & sports recommendation web app with personalized suggestion engine.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-20 scroll-mt-20">
+            <h2 class="section-title">Experience</h2>
+            <div class="space-y-6">
+                <!-- Experience 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>UI/UX & Frontend Developer</h3>
+                        <span class="experience-company">HackInTime — 24-Hour Hackathon</span>
+                        <span class="experience-date">2023</span>
+                    </div>
+                    <div class="experience-content">
+                        <p class="experience-project">Project: MediReportAI</p>
+                        <ul class="experience-details">
+                            <li>Designed UI screens and workflow using Figma</li>
+                            <li>Developed user flow for prescription upload and analysis</li>
+                            <li>Collaborated with backend team for feature integration</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>UI/UX & Frontend Developer</h3>
+                        <span class="experience-company">SRM Hackathon — 36-Hour Hackathon</span>
+                        <span class="experience-date">2023</span>
+                    </div>
+                    <div class="experience-content">
+                        <p class="experience-project">Project: OptiFit</p>
+                        <ul class="experience-details">
+                            <li>Designed wireframes and interface components in Figma</li>
+                            <li>Defined user journey for fitness recommendation flow</li>
+                            <li>Supported team with layout planning and feature visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-20 scroll-mt-20">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-sky-600">Contact Information</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-feather="mail" class="mr-3 text-sky-500"></i>
+                                <span>narayanan.akash10@gmail.com</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="phone" class="mr-3 text-sky-500"></i>
+                                <span>+91 9342521826</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="map-pin" class="mr-3 text-sky-500"></i>
+                                <span>Chennai, India</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="github" class="mr-3 text-sky-500"></i>
+                                <a href="https://github.com/AKash-101111" target="_blank" class="hover:text-sky-600">github.com/AKash-101111</a>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="linkedin" class="mr-3 text-sky-500"></i>
+                                <a href="https://linkedin.com/in/akash-n-cse4b12b532a" target="_blank" class="hover:text-sky-600">linkedin.com/in/akash-n</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1 text-gray-600">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-300 focus:border-sky-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1 text-gray-600">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-300 focus:border-sky-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-1 text-gray-600">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-300 focus:border-sky-500 outline-none transition"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/theme-toggle.js"></script>
+    <script src="components/scroll-indicator.js"></script>
+<script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
